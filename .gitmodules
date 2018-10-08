@@ -1,0 +1,9 @@
+[submodule "club-website"]
+	path = club-website
+	url = https://github.com/ufosc/club-website
+[submodule "club-backend"]
+	path = club-backend
+	url = https://github.com/ufosc/club-backend
+[submodule "club-admin-portal"]
+	path = club-admin-portal
+	url = https://github.com/ufosc/club-admin-portal
