@@ -1,10 +1,11 @@
+version: '3'
 services:
   nginx:
-    build: ./nginx
-    container_name: nginx
-+   volumes:
-+     - certs:/etc/letsencrypt
-+     - certs-data:/data/letsencrypt
+    build: ./nginx/
+    volumes:
+      - /var/www/ufopensource:/data/letsencrypt
+      - /etc/letsencrypt:/etc/letsencrypt
+      - ./club-website/website:/website
     ports:
       - 80:80
       - 443:443

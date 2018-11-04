@@ -1,4 +1,3 @@
 FROM nginx:latest
-RUN rm -rf /etc/nginx
-COPY ./ufopensource.club.conf /etc/nginx/conf/sites-enabled/
+COPY ./ufopensource.club.conf /etc/nginx/conf.d/
 EXPOSE 80 443

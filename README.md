@@ -12,12 +12,18 @@ We will use Docker to develop test the code.
 
 Install [Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) and [Docker compose](https://docs.docker.com/compose/install/).
 
+From inside the club-stack directory, download the most up-to-date submodules' master branches with
+
+```bash
+git submodule update --init --remote
+```
+
 ### Running
 
 To run the app
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 And go to [localhost:80](http://localhost:80/) for the club website.
@@ -25,7 +31,7 @@ And go to [localhost:80](http://localhost:80/) for the club website.
 Once you are done, you can press "Ctrl-C" in the terminal or type
 
 ```bash
-docker-compose down
+docker-compose down -v
 ```
 
 Be sure to read the [certbot-info](nginx/certbot-info.md) file for information about the SSL Certificate configuration.
